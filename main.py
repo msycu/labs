@@ -10,7 +10,6 @@ while True:
         break
     print("Введите корректное число!!!")
 
-
 def create_matrix(c):
     if c == 1:
         matrix = [[3, 4, -1, 10, 44], [1, 5, -4, -10, 5], [20, -9, 3, 1, 0], [-40, 12, 4, 5, 2]]
@@ -66,8 +65,6 @@ for row in matriz:
 for i in range(0, len(matriz[0])):
     h = []
     vrem = []
-    m = len(matriz)
-    n = len(matriz[0])
     k = 0
     for row in matriz:
         h.append(row[i])
@@ -85,6 +82,6 @@ print("Номера столбцов:")
 for row in bloks:
     if maxi == len(row):
         pov.append(row)
-        print("№", num, bloks[num - 1], end=", ")
+        print("№", num, end=", ")
     num = num + 1
 print(f"\nМаксиальноемчисло элементов меньше чем m: {maxi} \nЭлементы Столбцов:{pov}")
